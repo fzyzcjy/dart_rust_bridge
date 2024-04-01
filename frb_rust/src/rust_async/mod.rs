@@ -1,7 +1,6 @@
 #[cfg(feature = "rust-async")]
 #[cfg(not(wasm))]
 mod io;
-use futures::Future;
 #[cfg(feature = "rust-async")]
 #[cfg(not(wasm))]
 pub use io::*;
@@ -9,6 +8,7 @@ pub use io::*;
 #[cfg(feature = "rust-async")]
 #[cfg(wasm)]
 mod web;
+use futures::Future;
 #[cfg(feature = "rust-async")]
 #[cfg(wasm)]
 pub use web::*;

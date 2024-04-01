@@ -3,7 +3,6 @@ use crate::codec::sse::Rust2DartMessageSse;
 use crate::codec::Rust2DartMessageTrait;
 use crate::platform_types::{WireSyncRust2DartDco, WireSyncRust2DartSse};
 
-
 /// # Safety
 ///
 /// This function should never be called manually.

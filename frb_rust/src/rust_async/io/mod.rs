@@ -7,8 +7,3 @@ pub use tokio::*;
 mod async_std;
 #[cfg(feature = "async-std-runtime")]
 pub use async_std::*;
-
-#[cfg(feature = "nuclei-runtime")]
-mod nuclei;
-#[cfg(feature = "nuclei-runtime")]
-pub use nuclei::*;

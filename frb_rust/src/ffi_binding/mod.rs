@@ -3,11 +3,8 @@ use crate::for_generated::{into_leak_vec_ptr, new_leak_vec_ptr, vec_from_leak_pt
 #[cfg(not(wasm))]
 mod io;
 
-
 #[cfg(wasm)]
 mod web;
-#[cfg(wasm)]
-pub use web::*;
 
 #[no_mangle]
 pub unsafe extern "C" fn rust_vec_u8_new(len: i32) -> *mut u8 {

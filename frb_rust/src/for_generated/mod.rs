@@ -21,7 +21,8 @@ pub use crate::generalized_arc::std_arc::StdArc; // TODO temp
 pub use crate::generalized_isolate::Channel;
 pub use crate::generalized_isolate::IntoDartExceptPrimitive;
 pub use crate::handler::handler::{FfiCallMode, TaskInfo};
-
+#[cfg(any(feature = "chrono", feature = "uuid"))]
+pub use crate::misc::manual_impl::*;
 pub use crate::misc::version::FLUTTER_RUST_BRIDGE_RUNTIME_VERSION;
 pub use crate::platform_types::{
     DartAbi, MessagePort, PlatformGeneralizedUint8ListPtr, WireSyncRust2DartDco,

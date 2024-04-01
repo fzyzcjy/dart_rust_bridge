@@ -22,6 +22,7 @@ impl BaseCodec for CstCodec {
     // frb-coverage:ignore-end
 }
 
+#[allow(dead_code)]
 pub struct Rust2DartMessageCst(DartAbi);
 
 impl Rust2DartMessageTrait for Rust2DartMessageCst {
